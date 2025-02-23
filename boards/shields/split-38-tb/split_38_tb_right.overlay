@@ -25,10 +25,3 @@
           , <&xiao_d 0>
           ;
 };
-
-&xiao_i2c {
-  trackball_pim447@a {
-    button = <1>;
-    mode = <PIM447_SCROLL>;
-  };
-};
