@@ -1,0 +1,21 @@
+#include "split_38_tb.dtsi"
+
+&kscan_c2r {
+  col-gpios
+          = <&xiao_d 0>
+          , <&xiao_d 1>
+          , <&xiao_d 2>
+          , <&xiao_d 3>
+          , <&xiao_d 6>
+          ;
+};
+
+&kscan_r2c {
+  col-gpios
+          = <&xiao_d 0>
+          , <&xiao_d 1>
+          , <&xiao_d 2>
+          , <&xiao_d 3>
+          , <&xiao_d 6>
+          ;
+};

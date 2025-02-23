@@ -1,0 +1,11 @@
+file_format: "1"
+id: split_38_tb
+name: Split-38-Tb
+type: shield
+requires:
+  - seeeduino_xiao_ble
+features:
+  - keys
+siblings:
+  - split_38_tb_left
+  - split_38_tb_right
