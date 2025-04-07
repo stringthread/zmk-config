@@ -59,6 +59,6 @@
                     &kp LCTL  &kp LALT   &none    &kp LSFT       &kp RCTL  &none      &kp RALT   &kp RWIN
         &mkp LCLK   &none     &kp HOME   &kp END  &none          &none     &kp PG_UP  &kp PG_DN  &none     &mkp RCLK
       >;
-    }
+    };
   };
 };
