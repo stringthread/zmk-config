@@ -34,7 +34,7 @@
     };
   };
 
-  kscan_c2r {
+  kscan_c2r: kscan_c2r {
     compatible = "zmk,kscan-gpio-matrix";
     label = "C2R";
 
@@ -46,7 +46,7 @@
             ;
   };
 
-  kscan_r2c {
+  kscan_r2c: kscan_r2c {
     compatible = "zmk,kscan-gpio-matrix";
     label = "R2C";
 
