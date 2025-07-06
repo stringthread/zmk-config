@@ -21,6 +21,8 @@
 
   kscan0: kscan_composite {
     compatible = "zmk,kscan-composite";
+    wakeup-source;
+
     rows = <6>;
     columns = <10>;
 
@@ -40,9 +42,9 @@
 
     diode-direction = "col2row";
     row-gpios
-            = <&xiao_d 10>
-            , <&xiao_d 9>
-            , <&gpio0 9>
+            = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
   };
 
@@ -52,9 +54,13 @@
 
     diode-direction = "row2col";
     row-gpios
-            = <&xiao_d 10>
-            , <&xiao_d 9>
-            , <&gpio0 9>
+            = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
   };
+};
+
+&xiao_serial {
+  status = "disabled";
 };
