@@ -67,10 +67,6 @@
   status = "disabled";
 };
 
-&strip_led {
-  chain-length = <2>;
-}
-
 &pinctrl {
     spi3_default: spi3_default {
         group1 {
