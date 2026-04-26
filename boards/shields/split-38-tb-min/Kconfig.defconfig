@@ -1,0 +1,17 @@
+if SHIELD_SPLIT_38_TB_MIN_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "S38+Tb Min"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SPLIT_38_TB_MIN_LEFT || SHIELD_SPLIT_38_TB_MIN_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

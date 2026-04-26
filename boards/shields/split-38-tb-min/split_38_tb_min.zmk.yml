@@ -1,0 +1,11 @@
+file_format: "1"
+id: split_38_tb_min
+name: Split-38-Tb-Min
+type: shield
+requires:
+  - xiao_ble
+features:
+  - keys
+siblings:
+  - split_38_tb_min_left
+  - split_38_tb_min_right

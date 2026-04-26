@@ -1,0 +1,7 @@
+# No whitespace after the comma or in your part name!
+config SHIELD_SPLIT_38_TB_MIN_LEFT
+    def_bool $(shields_list_contains,split_38_tb_min_left)
+
+# No whitespace after the comma or in your part name!
+config SHIELD_SPLIT_38_TB_MIN_RIGHT
+    def_bool $(shields_list_contains,split_38_tb_min_right)
